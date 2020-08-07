@@ -1,1 +1,1 @@
-# animated graphs anda charts
+# animated graphs and charts
