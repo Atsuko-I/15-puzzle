@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animated Graphs</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="keywords">
+<meta content="" name="description">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:400,300,700,900" rel="stylesheet">
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
 
+<body data-spy="scroll" data-offset="80" data-target="#thenavbar">
+
+<div id="thenavbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#top" class="smoothscroll">Home</a></li>
+        <li><a href="#sample01" class="smoothscroll">sample 01</a></li>
+        <li><a href="#sample02" class="smoothscroll">sample 02</a></li>
+        <li><a href="#sample03" class="smoothscroll">sample 03</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <h1>Animated Graphs</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sample01">
+  <div class="container">
+    <div class="col-lg-8 col-lg-offset-2 centered">
+      <h3>sample 01</h3>
+      <div class="reload gray" onclick="window.location.reload();"></div>
+      <div class="mt">
+        <canvas id="myChart"></canvas>
+        <script src="sample_01/main.js"></script>
+              </div>
+    </div>
+  </div>
+</div>
+
+<div id="sample02">
+  <div class="container">
+    <div class="col-lg-10 col-lg-offset-1 centered">
+      <h3>sample 02</h3>
+      <div class="reload gray" onclick="window.location.reload();"></div>
+      <div class="mt">
+        <figure>
+          <div class="y-axis">
+            <h4>Y-Axis</h4>
+          </div>
+          <div class="graphic">
+            <div class="row">
+              <h6>Bar_01</h6>
+              <div class="chart">
+                <span class="block" title="Cat_A">
+                   <span class="value">34%</span>
+                </span>
+                <span class="block" title="Cat_B">
+                   <span class="value">13%</span>
+                </span>
+                <span class="block" title="Cat_C">
+                   <span class="value">8%</span>
+                </span>
+                <span class="block" title="Cat_D">
+                   <span class="value">15%</span>
+                </span>
+                <span class="block" title="Cat_E">
+                    <span class="value">17%</span>
+                </span>
+                <span class="block" title="Cat_F">
+                    <span class="value">13%</span>
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <h6>Bar_02</h6>
+              <div class="chart">
+                <span class="block" title="Cat_A">
+                    <span class="value">19%</span>
+                </span>
+                <span class="block" title="Cat_B">
+                    <span class="value">11%</span>
+                </span>
+                <span class="block" title="Cat_C">
+                     <span class="value">19%</span>
+                </span>
+                <span class="block" title="Cat_D">
+                     <span class="value">21%</span>
+                </span>
+                <span class="block" title="Cat_E">
+                     <span class="value">14%</span>
+                </span>
+                <span class="block" title="Cat_F">
+                     <span class="value">16%</span>
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <h6>Bar_03</h6>
+              <div class="chart">
+                <span class="block" title="Cat_A">
+                     <span class="value">26%</span>
+                </span>
+                <span class="block" title="Cat_B">
+                     <span class="value">18%</span>
+                </span>
+                <span class="block" title="Cat_C">
+                     <span class="value">22%</span>
+                </span>
+                <span class="block" title="Cat_D">
+                     <span class="value">15%</span>
+                </span>
+                <span class="block" title="Cat_E">
+                     <span class="value">12%</span>
+                </span>
+                <span class="block" title="Cat_F">
+                     <span class="value">7%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="x-axis">
+            <h4>X-Axis</h4>
+            <ul class="legend">
+              <li>Cat_A</li>
+              <li>Cat_B</li>
+              <li>cat_C</li>
+              <li>Cat_D</li>
+              <li>Cat_E</li>
+              <li>Cat_F</li>
+            </ul>
+          </div>
+          </figure>
+          <script src="sample_02/main.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sample03">
+  <div class="container">
+    <div class="col-lg-10 col-lg-offset-1 centered">
+      <h3>sample 03</h3>
+      <div class="reload gray" onclick="window.location.reload();"></div>
+      <div class="mt">
+        <div class="widget">
+            <div id="chart" class="chart-container"></div>
+        </div>
+        <script src="sample_03/main.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container">
+    <p>&copy; Atsuko. I  <img src="lib/img/black_cat.png"></p>
+  </div>
+</div>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
