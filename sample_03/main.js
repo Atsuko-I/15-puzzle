@@ -26,7 +26,7 @@ var dataset = [
     var innerRadiusArcShadow=innerRadiusArc-shadowWidth;
 
     var color = d3.scale.ordinal()
-     .range(['#32cd32', '#841a75', '#043c78', '#c82c55', '#f3981d']);
+     .range(['#004666', '#00608d', '#1e90ff', '#009e9f', '#88bfbf']);
 
     var svg=d3.select("#chart")
             .append("svg")
@@ -83,7 +83,7 @@ var dataset = [
                     y:y
                 })
                 .style({
-                    fill:'#f7f6fb',
+                    fill:'#222',
                     'font-size':size
                 });
     };
