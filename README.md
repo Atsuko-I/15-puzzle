@@ -1,1 +1,1 @@
-# animated_charts
+# 15 puzzle
